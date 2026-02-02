@@ -1,0 +1,18 @@
+### Vagrant ###
+# General
+.vagrant/
+
+# Log files
+*.log
+
+### Vagrant Patch ###
+*.box
+
+# --- Node.js Dependencies ---
+node_modules/
+npm-debug.log
+yarn-error.log
+
+# --- System Files ---
+.DS_Store
+Thumbs.db
