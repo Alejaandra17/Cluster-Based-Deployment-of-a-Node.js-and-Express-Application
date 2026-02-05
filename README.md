@@ -274,6 +274,8 @@ pm2 start ecosystem.config.js
 
   ![](assets/img/img13.png)
 
+  ---
+
   ## 5. Questions
 
  *Why does the single-process sometimes outperform the cluster?*
@@ -289,5 +291,6 @@ pm2 start ecosystem.config.js
  - Task Complexity: When a task is very simple (low n), the overhead of the cluster architecture is more noticeable than the benefit of parallelism.
 
  **Conclusion:** Clustering is not for all scenarios. It is highly effective for CPU-intensive tasks or high-traffic environments where blocking the event loop is a risk. However, for very simple, lightweight operations, a single-process execution can be more efficient as it avoids the architectural complexity of a cluster.
+
 
 
